@@ -4,8 +4,8 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <div>
-      <div className="image_container">
+    <div className="flex flex-col justify-center items-center">
+      <div className="image_container m-auto p-6">
         <Image
           src="/woodfern_logo.png"
           alt="woodfern floral design"
@@ -14,17 +14,17 @@ export default function Navbar() {
         />
       </div>
       <div className="nav_links_container flex">
-        <ul className="flex flex-row">
-          <li>
+        <ul className="flex">
+          <li className="mx-9 px-2 text-terracota uppercase">
             <Link href="/services">Services</Link>
           </li>
-          <li>
+          <li className="mx-9 px-2 text-terracota uppercase">
             <Link href="/portfolio">Portfolio</Link>
           </li>
-          <li>
+          <li className="mx-9 px-2 text-terracota uppercase">
             <Link href="/contact">Contact</Link>
           </li>
-          <li>
+          <li className="mx-9 px-2 text-terracota uppercase">
             <Link href="/blog">Blog</Link>
           </li>
         </ul>
