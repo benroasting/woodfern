@@ -5,6 +5,9 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      sans: ["Helvetica", "Arial", "sans-serif"],
+    },
     extend: {
       colors: {
         terracota: "rgba(194,147,97,.93)",
