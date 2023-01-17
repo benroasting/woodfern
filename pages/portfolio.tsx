@@ -1,53 +1,153 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
+
+const topImages = [
+  {
+    src: "/../public/portfolio/portfolio_arrangement_1.jpeg",
+    alt: "woodfern floral design",
+  },
+  {
+    src: "/../public/portfolio/portfolio_bridal_bouquet_1.jpeg",
+    alt: "woodfern floral design",
+  },
+  {
+    src: "/../public/portfolio/portfolio_arrangement_2.jpeg",
+    alt: "woodfern floral design",
+  },
+  {
+    src: "/../public/portfolio/portfolio_arrangement_3.jpeg",
+    alt: "woodfern floral design",
+  },
+  {
+    src: "/../public/portfolio/portfolio_tree_installation.jpeg",
+    alt: "woodfern floral design",
+  },
+  {
+    src: "/../public/portfolio/portfolio_closeup_flowers.jpeg",
+    alt: "woodfern floral design",
+  },
+  {
+    src: "/../public/portfolio/portfolio_bridal_bouquet_2.jpeg",
+    alt: "woodfern floral design",
+  },
+  {
+    src: "/../public/portfolio/portfolio_arrangement_4.jpeg",
+    alt: "woodfern floral design",
+  },
+  {
+    src: "/../public/portfolio/portfolio_floor_installation.jpeg",
+    alt: "woodfern floral design",
+  },
+  {
+    src: "/../public/portfolio/portfolio_closeup_flowers_2.jpeg",
+    alt: "woodfern floral design",
+  },
+  {
+    src: "/../public/portfolio/portfolio_arrangement_5.jpeg",
+    alt: "woodfern floral design",
+  },
+  {
+    src: "/../public/portfolio/portfolio_closeup_flowers_3.jpeg",
+    alt: "woodfern floral design",
+  },
+];
+
+const bottomImages = [
+  {
+    src: "/../public/portfolio/portfolio_arrangement_1.jpeg",
+    alt: "woodfern floral design",
+  },
+  {
+    src: "/../public/portfolio/portfolio_bridal_bouquet_1.jpeg",
+    alt: "woodfern floral design",
+  },
+  {
+    src: "/../public/portfolio/portfolio_arrangement_2.jpeg",
+    alt: "woodfern floral design",
+  },
+  {
+    src: "/../public/portfolio/portfolio_arrangement_3.jpeg",
+    alt: "woodfern floral design",
+  },
+  {
+    src: "/../public/portfolio/portfolio_tree_installation.jpeg",
+    alt: "woodfern floral design",
+  },
+  {
+    src: "/../public/portfolio/portfolio_closeup_flowers.jpeg",
+    alt: "woodfern floral design",
+  },
+  {
+    src: "/../public/portfolio/portfolio_bridal_bouquet_2.jpeg",
+    alt: "woodfern floral design",
+  },
+  {
+    src: "/../public/portfolio/portfolio_arrangement_4.jpeg",
+    alt: "woodfern floral design",
+  },
+  {
+    src: "/../public/portfolio/portfolio_floor_installation.jpeg",
+    alt: "woodfern floral design",
+  },
+  {
+    src: "/../public/portfolio/portfolio_closeup_flowers_2.jpeg",
+    alt: "woodfern floral design",
+  },
+  {
+    src: "/../public/portfolio/portfolio_arrangement_5.jpeg",
+    alt: "woodfern floral design",
+  },
+  {
+    src: "/../public/portfolio/portfolio_closeup_flowers_3.jpeg",
+    alt: "woodfern floral design",
+  },
+];
 
 export default function Portfolio() {
   return (
-    <div className="grid gap-3 grid-cols-3 grid-rows-4">
-      <div className="overflow-hidden relative w-full h-60">
-        <Image
-          src="/services_trio_1.jpeg"
-          alt="woodfern floral design"
-          className="block max-w-full w-full h-full object-cover"
-          width={200}
-          height={200}
-        />
+    <div>
+      <div className="grid gap-3 grid-cols-3 grid-rows-4 p-9">
+        {topImages.map((image) => (
+          <div key={image.src} className="overflow-hidden relative w-82 h-60">
+            <Image
+              src={image.src}
+              alt={image.alt}
+              className="block max-w-full w-full h-full object-cover"
+              width={200}
+              height={200}
+            />
+          </div>
+        ))}
       </div>
-      <div className="overflow-hidden relative w-full h-60">
-        <Image
-          src="/services_trio_1.jpeg"
-          alt="woodfern floral design"
-          width={200}
-          className="block max-w-full w-full h-full object-cover"
-          height={200}
-        />
+      <div>
+        <Link
+          className="border-2 border-black rounded-full p-3 text-xs uppercase"
+          href="/contact"
+        >
+          Let&apos;s Bring Your Vision To Life!
+        </Link>
       </div>
-      <div className="overflow-hidden relative w-full h-60">
-        <Image
-          src="/services_trio_1.jpeg"
-          alt="woodfern floral design"
-          width={200}
-          className="block max-w-full w-full h-full object-cover"
-          height={200}
-        />
+      <div className="grid gap-3 grid-cols-3 grid-rows-4 p-9">
+        {bottomImages.map((image) => (
+          <div key={image.src} className="overflow-hidden relative w-82 h-60">
+            <Image
+              src={image.src}
+              alt={image.alt}
+              className="block max-w-full w-full h-full object-cover"
+              width={200}
+              height={200}
+            />
+          </div>
+        ))}
       </div>
-      <div className="overflow-hidden relative w-full h-60">
-        <Image
-          src="/services_trio_1.jpeg"
-          alt="woodfern floral design"
-          width={200}
-          className="block max-w-full w-full h-full object-cover"
-          height={200}
-        />
-      </div>
-      <div className="overflow-hidden relative w-full h-60">
-        <Image
-          src="/services_trio_1.jpeg"
-          alt="woodfern floral design"
-          width={200}
-          className="block max-w-full w-full h-full object-cover"
-          height={200}
-        />
+      <div>
+        <Link
+          className="border-2 border-black rounded-full p-3 text-xs uppercase"
+          href="/contact"
+        >
+          Get A Quote
+        </Link>
       </div>
     </div>
   );
