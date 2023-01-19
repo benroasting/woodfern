@@ -141,13 +141,21 @@ export default function Portfolio() {
           </div>
         ))}
       </div>
-      <div>
+      <div className="mb-9 text-xs uppercase">
         <Link
-          className="border-2 border-black rounded-full p-3 text-xs uppercase"
+          className="border-2 border-black rounded-full p-3"
           href="/contact"
         >
           Get A Quote
         </Link>
+      </div>
+      <div>
+        <h2 className="text-terracota font-sans font-thin uppercase">
+          Flowers Inspired By Nature + Intentionally Designed To Tell Your Story
+        </h2>
+        <h2 className="text-xs uppercase mb-8">
+          Nashville + Middle Tennessee Wedding Florist
+        </h2>
       </div>
     </div>
   );
