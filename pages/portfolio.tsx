@@ -120,9 +120,9 @@ export default function Portfolio() {
           </div>
         ))}
       </div>
-      <div>
+      <div className="flex justify-center">
         <Link
-          className="border-2 border-black rounded-full p-3 text-xs uppercase"
+          className="border-2 border-black rounded-full p-3 tracking-widest font-sans text-xs text-xs uppercase"
           href="/contact"
         >
           Let&apos;s Bring Your Vision To Life!
@@ -141,9 +141,9 @@ export default function Portfolio() {
           </div>
         ))}
       </div>
-      <div className="mb-9 text-xs uppercase">
+      <div className="flex justify-center mb-9">
         <Link
-          className="border-2 border-black rounded-full p-3"
+          className="border-2 border-black rounded-full tracking-widest p-3  font-sans text-xs uppercase"
           href="/contact"
         >
           Get A Quote
