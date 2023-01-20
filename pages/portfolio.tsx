@@ -122,7 +122,7 @@ export default function Portfolio() {
       </div>
       <div className="flex justify-center">
         <Link
-          className="border-2 border-black rounded-full p-3 tracking-widest font-sans text-xs text-xs uppercase"
+          className="border-2 border-black rounded-full p-3 tracking-widest font-sans text-xs uppercase"
           href="/contact"
         >
           Let&apos;s Bring Your Vision To Life!
