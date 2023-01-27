@@ -15,7 +15,7 @@ export default function Navbar() {
       </div>
       <div className="nav_links_container flex">
         <ul className="flex">
-          <li className="mx-9 px-2 text-terracota font-sans font-thin uppercase">
+          <li className="mx-9 px-2 text-terracota font-proxima font-thin uppercase">
             <Link href="/services">Services</Link>
           </li>
           <li className="mx-9 px-2 text-terracota font-sans font-thin uppercase">

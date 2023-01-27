@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://use.typekit.net/aqg7cau.css");
+
 body {
   margin: 2rem;
 }

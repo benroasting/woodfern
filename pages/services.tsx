@@ -20,7 +20,7 @@ const servicesImages = [
 export default function Services() {
   return (
     <div className="flex flex-col justify-center w-1/2 m-auto">
-      <h2 className="text-sm uppercase mb-8 text-center">
+      <h2 className="text-sm font-livory uppercase mb-8 text-center">
         We are a wedding florist serving the Nashville area + all of middle
         Tennessee + anywhere else your wedding takes us!
       </h2>
@@ -32,7 +32,7 @@ export default function Services() {
           height={350}
         />
       </div>
-      <p className="text-sm text-center leading-6 uppercase mb-9">
+      <p className="text-sm text-center font-livory font-thin tracking-widest leading-6 uppercase mb-9">
         We offer a couple of different service options, but no matter which one
         is the best fit for you--our top priorities are to make you feel heard,
         known + understood and to make the flower planning process totally

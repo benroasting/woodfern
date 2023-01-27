@@ -149,7 +149,7 @@ export default function Portfolio() {
           Get A Quote
         </Link>
       </div>
-      <div>
+      <div className="flex flex-col items-center">
         <h2 className="text-terracota font-sans font-thin uppercase">
           Flowers Inspired By Nature + Intentionally Designed To Tell Your Story
         </h2>

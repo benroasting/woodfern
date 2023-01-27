@@ -7,9 +7,17 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: ["Helvetica", "Arial", "sans-serif"],
+      livory: ["livory", "serif"],
+      proxima: ["proxima-nova", "sans-serif"],
+    },
+    fontWeight: {
+      thin: "100",
+      light: "300",
+      normal: "400",
+      bold: "700",
     },
     fontSize: {
-      xs: "0.5rem",
+      xs: "0.6rem",
       sm: "0.8rem",
       base: "1rem",
       xl: "1.25rem",

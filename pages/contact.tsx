@@ -65,16 +65,21 @@ export default function Contact() {
       });
   };
   return (
-    <main>
-      <h2 className="text-terracota font-sans font-thin uppercase">
+    <main className="flex flex-col items-center">
+      <h2 className="text-terracota text-left font-sans font-thin uppercase">
         Contact Us
       </h2>
-      <h2 className="text-xs uppercase mb-8">
+      <h2 className="text-xs text-left w-[500px] uppercase mb-8">
         PLEASE COMPLETE THE FORM BELOW OR EMAIL US DIRECTLY AT
         WOODFERNFLORALDESIGN@GMAIL.COM. WE CAN&apos;T WAIT TO HEAR FROM YOU!
       </h2>
-      <form className="flex flex-col w-1/2" onSubmit={handleOnSubmit}>
-        <label htmlFor="couples_name">Couple&apos;s Names *</label>
+      <form
+        className="flex flex-col w-[500px] text-xs"
+        onSubmit={handleOnSubmit}
+      >
+        <label className="" htmlFor="couples_name">
+          Couple&apos;s Names *
+        </label>
         <input
           id="name"
           type="name"
